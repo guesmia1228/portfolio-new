@@ -7,60 +7,67 @@ import { useTheme } from "../contexts/ThemeContext"
 const personalEvents = [
   {
     id: 1,
-    date: "1999-03-03",
+    date: "1995-12-28",
     title: "Born",
     description: "Entered the world and began my journey.",
-    additionalInfo: "Born in a beautiful spring day, marking the beginning of my adventure in this world. My family was overjoyed to welcome me."
+    additionalInfo: "Born in winter, marking the beginning of my adventure. My family was overjoyed to welcome me."
   },
   {
     id: 2,
-    date: "2004-09-01",
+    date: "2001-09-01",
     title: "Started School",
     description: "Embarked on my educational adventure.",
     additionalInfo: "My first day of school was filled with excitement and nervousness. I made my first friends and discovered my love for learning."
   },
   {
     id: 3,
-    date: "2011-06-15",
+    date: "2011-08-30",
     title: "First Computer",
     description: "Got my first personal computer and discovered the digital world.",
-    additionalInfo: "It was a Windows PC with modest specs, but it opened up a whole new world for me. I spent hours exploring software, games, and eventually started learning basic programming."
+    additionalInfo: "It was a Windows PC with modest specs, but it opened up a whole new world for me. I spent hours exploring software, games, and started learning programming."
   },
   {
     id: 4,
-    date: "2017-05-20",
+    date: "2012-05-20",
     title: "Graduated High School",
     description: "Completed secondary education and prepared for the next chapter.",
-    additionalInfo: "Graduated with honors and received recognition for my achievements in computer science and mathematics. This milestone marked the end of one chapter and the beginning of another."
+    additionalInfo: "Graduated with honors and received recognition for achievements in computer science and mathematics."
   },
   {
     id: 5,
-    date: "2021-06-10",
+    date: "2016-06-10",
     title: "College Graduation",
     description: "Earned my degree and stepped into the professional world.",
-    additionalInfo: "Graduated with a degree in Computer Science. My final project focused on web development and artificial intelligence, which helped me secure my first job in the tech industry."
+    additionalInfo: "Graduated with a degree in Computer Science. My final project focused on web development and AI, which helped me secure my first job."
   },
   {
     id: 6,
-    date: "2023-03-03",
-    title: "Started First Job",
-    description: "Began my career in the tech industry.",
-    additionalInfo: "Joined a dynamic tech company as a software developer. Working on cutting-edge projects has been both challenging and rewarding, allowing me to grow professionally and expand my skill set."
+    date: "2021-03-24",
+    title: "Master of Engineering",
+    description: "Completed my Master's degree in Engineering.",
+    additionalInfo: "Focused on advanced topics in software engineering and machine learning. My thesis explored the applications of AI in real-world scenarios."
   },
   {
     id: 7,
-    date: "2024-02-25",
+    date: "2016-06-20",
+    title: "Started First Job",
+    description: "Began my career in the tech industry.",
+    additionalInfo: "Joined a tech company as a software developer. Working on challenging projects has helped me grow professionally."
+  },
+  {
+    id: 8,
+    date: "2019-12-28",
     title: "25th Birthday",
     description: "Celebrating a quarter-century of life and looking forward to the future.",
-    additionalInfo: "Reflecting on my journey so far and setting new goals for the future. Grateful for all the experiences and people who have shaped my path."
-  },
+    additionalInfo: "Reflecting on my journey and setting new goals for the future."
+  }
 ];
 
 export default function TimelinePage() {
   const { theme } = useTheme();
   
   // Sort events by date in descending order (most recent first)
-  const sortedEvents = [...personalEvents].sort((a, b) => {
+  const sortedEvents = [...personalEvents].sort((a, b) => {             
     return new Date(b.date) - new Date(a.date);
   });
   

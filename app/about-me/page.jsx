@@ -92,7 +92,7 @@ export default function AboutMe() {
         <div className="space-y-3 sm:space-y-4">
           <div>
             <h3 className={`text-lg sm:text-xl ${theme.primary}`}>Bachelor of Engineering - BE, Computer Science</h3>
-            <p className="text-xs sm:text-sm opacity-80">Ladoke Akintola University of Technology, 2012-2026</p>
+            <p className="text-xs sm:text-sm opacity-80">Ladoke Akintola University of Technology, 2012-2016</p>
           </div>
           <div>
             <h3 className={`text-lg sm:text-xl ${theme.primary}`}>Master of Engineering - MEng, Computer Science</h3>
