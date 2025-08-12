@@ -1,4 +1,5 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Work_Sans, Poppins } from "next/font/google";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -52,6 +53,7 @@ export default function RootLayout({ children }) {
           <TracingBeam>{children}</TracingBeam>
         </ThemeProvider>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
